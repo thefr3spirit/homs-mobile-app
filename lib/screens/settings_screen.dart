@@ -240,22 +240,32 @@ class _SettingsScreenState extends State<SettingsScreen> {
   void _showAbout() {
     showAboutDialog(
       context: context,
-      applicationName: 'Lemi Hotel Management',
+      applicationName: 'Smara White House Hotel',
       applicationVersion: _appVersion,
       applicationIcon: Container(
-        padding: const EdgeInsets.all(8),
+        width: 64,
+        height: 64,
         decoration: BoxDecoration(
-          color: Colors.blue.shade700,
           borderRadius: BorderRadius.circular(12),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.1),
+              blurRadius: 8,
+              offset: const Offset(0, 2),
+            ),
+          ],
         ),
-        child: const Icon(Icons.hotel, size: 32, color: Colors.white),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(12),
+          child: Image.asset('assets/logo.jpg', fit: BoxFit.cover),
+        ),
       ),
       children: [
         const Text(
           'Complete hotel management solution for tracking guests, rooms, bookings, and payments.',
         ),
         const SizedBox(height: 16),
-        const Text('© 2026 Lemi Hotel'),
+        const Text('© 2026 Smara White House Hotel'),
       ],
     );
   }

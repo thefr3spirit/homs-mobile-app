@@ -86,7 +86,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 children: [
                   // Logo/Icon
                   Container(
-                    padding: const EdgeInsets.all(24),
+                    padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       shape: BoxShape.circle,
@@ -98,17 +98,20 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ],
                     ),
-                    child: Icon(
-                      Icons.hotel,
-                      size: 64,
-                      color: Theme.of(context).colorScheme.primary,
+                    child: ClipOval(
+                      child: Image.asset(
+                        'assets/logo.jpg',
+                        width: 96,
+                        height: 96,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                   const SizedBox(height: 32),
 
                   // Title
                   const Text(
-                    'Lemi Hotel Management',
+                    'Smara White House Hotel',
                     style: TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.bold,
