@@ -90,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Hotel Manager',
+          'Smara White House Hotel',
           style: TextStyle(fontWeight: FontWeight.w600, letterSpacing: 0.5),
         ),
         backgroundColor: const Color(0xFF3D5A80),

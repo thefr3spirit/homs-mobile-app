@@ -121,6 +121,17 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   const SizedBox(height: 8),
                   const Text(
+                    'Your comfort is our pride',
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.white,
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.w500,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 16),
+                  const Text(
                     'Sign in to continue',
                     style: TextStyle(fontSize: 16, color: Colors.white70),
                   ),
@@ -259,36 +270,6 @@ class _LoginScreenState extends State<LoginScreen> {
                           ],
                         ),
                       ),
-                    ),
-                  ),
-                  const SizedBox(height: 24),
-
-                  // Default credentials hint (remove in production)
-                  Container(
-                    padding: const EdgeInsets.all(12),
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.2),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: const Column(
-                      children: [
-                        Text(
-                          'Default Login',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        SizedBox(height: 4),
-                        Text(
-                          'owner@lemihotel.com',
-                          style: TextStyle(color: Colors.white70, fontSize: 12),
-                        ),
-                        Text(
-                          'admin123',
-                          style: TextStyle(color: Colors.white70, fontSize: 12),
-                        ),
-                      ],
                     ),
                   ),
                 ],
